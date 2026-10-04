@@ -2,13 +2,12 @@
 
 **Workshop ArmisLAB × NUBI · 12 de outubro de 2026 · 14:00–15:30 · 1.º ano de Bioinformática**
 
-Aqui estão a apresentação, os passos a seguir durante a sessão e um pequeno exercício. Não precisas de saber programar. No fim, terás uma cópia deste repositório na tua conta GitHub com uma alteração feita por ti.
+Aqui estão a apresentação, os passos a seguir durante a sessão e um pequeno exercício. Não precisas de saber programar. Os **slides interativos acompanham também a prática**; os guias Markdown dão detalhes e ajudam se ficares bloqueado. No fim, terás uma cópia deste repositório na tua conta GitHub com uma alteração feita por ti.
 
 ## Começar
 
-1. Abre o [roteiro do workshop](guia/roteiro.md). Ele acompanha os 90 minutos e indica o que fazer em cada etapa.
-2. Se ainda não tens Git, escolhe o [guia para Windows](guia/instalar-windows.md), [macOS](guia/instalar-macos.md) ou [Linux](guia/instalar-linux.md). [WSL](guia/wsl-opcional.md) é opcional.
-3. Consulta a [apresentação para projeção](https://riquifeup.github.io/workshop_git/) para rever as ideias.
+1. Abre a [apresentação interativa](https://riquifeup.github.io/workshop_git/). Depois da teoria, avança pelos slides de prática e usa os botões para copiar comandos quando fizer sentido.
+2. Se precisares de mais detalhe, abre o [roteiro do workshop](guia/roteiro.md) e o guia de instalação para [Windows](guia/instalar-windows.md), [macOS](guia/instalar-macos.md) ou [Linux](guia/instalar-linux.md). [WSL](guia/wsl-opcional.md) é opcional.
 4. Na prática, vais criar um **Fork** deste repositório, clonar a tua cópia e preencher o [modelo pessoal](exercicio/README.md).
 
 ## Índice
@@ -27,7 +26,7 @@ Aqui estão a apresentação, os passos a seguir durante a sessão e um pequeno 
 
 ## O percurso em uma linha
 
-**Fork no GitHub → Clone no computador → editar um ficheiro → `git status` → `git add` → `git commit` → `git push` → confirmar no GitHub.**
+**Fork no GitHub → Clone no computador → editar um ficheiro → `git status` → `git add` → `git commit` → `git push` → `git log` → confirmar no GitHub.**
 
 O **Fork** é necessário: cria uma cópia na tua conta, onde podes enviar as tuas alterações. Se clonasses diretamente o repositório do formador, não terias permissão para fazer `push` para ele.
 

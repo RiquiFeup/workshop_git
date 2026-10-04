@@ -8,6 +8,7 @@
   const overviewToggle = document.getElementById('overview-toggle');
   const overviewClose = document.getElementById('overview-close');
   const overviewList = document.getElementById('overview-list');
+  const copyStatus = document.getElementById('copy-status');
   let current = 0;
   let touchStart = null;
 
@@ -66,11 +67,61 @@
     if (event.target === overview) overview.close();
   });
 
+  const tabs = [...document.querySelectorAll('.os-tabs [role="tab"]')];
+  function selectTab(tab, focus = false) {
+    tabs.forEach(item => {
+      const selected = item === tab;
+      item.setAttribute('aria-selected', String(selected));
+      item.tabIndex = selected ? 0 : -1;
+      document.getElementById(item.getAttribute('aria-controls')).hidden = !selected;
+    });
+    if (focus) tab.focus();
+  }
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => selectTab(tab));
+    tab.addEventListener('keydown', event => {
+      if (!['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      event.stopPropagation();
+      const destination = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1
+        : (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+      selectTab(tabs[destination], true);
+    });
+  });
+
+  document.querySelectorAll('.copy-command').forEach(button => {
+    button.addEventListener('click', async () => {
+      const code = document.getElementById(button.dataset.copyTarget);
+      if (!code) return;
+      try {
+        await navigator.clipboard.writeText(code.textContent.trim());
+        button.textContent = 'Copiado ✓';
+        button.classList.add('is-copied');
+        button.classList.remove('is-error');
+        copyStatus.textContent = `Comando copiado: ${code.textContent.trim()}`;
+      } catch {
+        button.textContent = 'Seleciona o texto';
+        button.classList.add('is-error');
+        button.classList.remove('is-copied');
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(code);
+        selection.removeAllRanges();
+        selection.addRange(range);
+        copyStatus.textContent = 'Cópia automática indisponível. O comando está selecionado para copiares manualmente.';
+      }
+      window.setTimeout(() => {
+        button.textContent = 'Copiar';
+        button.classList.remove('is-copied', 'is-error');
+      }, 2500);
+    });
+  });
+
   document.addEventListener('keydown', event => {
     if (overview.open) return;
     if (event.altKey || event.ctrlKey || event.metaKey) return;
     const target = event.target;
-    if (target instanceof HTMLElement && target.closest('input, textarea, select, [contenteditable="true"]')) return;
+    if (target instanceof HTMLElement && target.closest('input, textarea, select, [contenteditable="true"], [role="tablist"], details')) return;
     if (['ArrowRight', 'PageDown'].includes(event.key) || (event.key === ' ' && !(target instanceof HTMLElement && target.closest('button, a')))) {
       event.preventDefault();
       show(current + 1);

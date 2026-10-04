@@ -34,3 +34,10 @@ As contagens de estrelas, commits e Issues mudam com o tempo. Na apresentação,
 4. **Issues:** que perguntas ou problemas estão a ser discutidos?
 
 Se mais tarde quiseres contribuir para um projeto aberto, procura as instruções `CONTRIBUTING.md` do próprio projeto antes de começar.
+
+## Depois do workshop: ideias para o teu README
+
+Estes recursos são opcionais e ficam para exploração depois de concluíres o exercício. Alguns exemplos incluem elementos externos ou informação pessoal; escolhe apenas o que queres publicar.
+
+- [Awesome GitHub Profile README](https://github.com/abhisheknaiidu/awesome-github-profile-readme): coleção de perfis para inspiração.
+- [Profile README Generator](https://profile-readme-generator.com/en): ferramenta externa para montar um README. Revê o resultado antes de o publicar e não introduzas dados que queiras manter privados.

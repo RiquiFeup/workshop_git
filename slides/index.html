@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f7f5">
   <meta name="description" content="Apresentação introdutória a Git e GitHub para estudantes de Bioinformática. ArmisLAB × NUBI.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'">
   <title>Git & GitHub — ArmisLAB × NUBI</title>
   <link rel="stylesheet" href="styles/slides.css">
+  <link rel="stylesheet" href="styles/practice.css">
   <script src="scripts/slides.js" defer></script>
 </head>
 <body>
@@ -19,9 +21,9 @@
       </div>
       <div class="cover-content">
         <div class="brand-lockup" aria-label="ArmisLAB e NUBI">
-          <img class="brand-armis" src="assets/brand/armislab-wordmark.png" alt="ArmisLAB FEUP">
+          <img class="brand-armis" src="assets/brand/armislab-transparent.png" alt="ArmisLAB FEUP">
           <span aria-hidden="true" class="brand-divider"></span>
-          <img class="brand-nubi" src="../nubi_logo.jpg" alt="NUBI, Núcleo Universitário de Bioinformática">
+          <img class="brand-nubi" src="../nubi_logo.png" alt="NUBI, Núcleo Universitário de Bioinformática">
         </div>
         <div class="cover-copy">
           <h1>Git<span class="amp"> & </span>GitHub</h1>
@@ -58,7 +60,7 @@
           <svg viewBox="0 0 560 260" aria-hidden="true"><g fill="none" stroke-width="4" stroke-linecap="round"><path stroke="#8d2d19" d="M32 38 C160 38 200 122 300 122"/><path stroke="#6844a6" d="M32 124 H300"/><path stroke="#177ad0" d="M32 210 C160 210 200 122 300 122"/><path stroke="#222234" d="M300 122 H526"/></g><g fill="#8d2d19"><circle cx="32" cy="38" r="10"/></g><g fill="#6844a6"><circle cx="32" cy="124" r="10"/></g><g fill="#177ad0"><circle cx="32" cy="210" r="10"/></g><g fill="#222234"><circle cx="300" cy="122" r="12"/><circle cx="526" cy="122" r="12"/></g></svg>
           <div class="history-caption"><span>alterações de várias pessoas</span><strong>uma história organizada</strong></div>
         </div>
-        <p class="source-note">Fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git" target="_blank" rel="noopener">Pro Git · Short History of Git</a></p>
+        <p class="source-note">Fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git" target="_blank" rel="noopener noreferrer">Pro Git · Short History of Git</a></p>
       </div>
     </section>
 
@@ -163,26 +165,162 @@
       <div class="slide-inner examples-layout">
         <div><h2>Isto já faz parte da Bioinformática.</h2><p class="lead narrow">Abre um repositório e repara no README, nos ficheiros e no histórico de commits.</p></div>
         <div class="example-list">
-          <a href="https://github.com/biopython/biopython" target="_blank" rel="noopener"><span class="example-index">01</span><span><strong>Biopython</strong><small>Ferramentas abertas de Bioinformática em Python</small></span><span class="example-link" aria-hidden="true">↗</span></a>
-          <a href="https://github.com/nf-core/rnaseq" target="_blank" rel="noopener"><span class="example-index">02</span><span><strong>nf-core/rnaseq</strong><small>Pipeline comunitário de análise de RNA-seq</small></span><span class="example-link" aria-hidden="true">↗</span></a>
-          <a href="https://github.com/Illumina/dragen-aws-batch-quickstart" target="_blank" rel="noopener"><span class="example-index">03</span><span><strong>Illumina · DRAGEN</strong><small>Exemplo público de repositório de uma empresa</small></span><span class="example-link" aria-hidden="true">↗</span></a>
+          <a href="https://github.com/biopython/biopython" target="_blank" rel="noopener noreferrer"><span class="example-index">01</span><span><strong>Biopython</strong><small>Ferramentas abertas de Bioinformática em Python</small></span><span class="example-link" aria-hidden="true">↗</span></a>
+          <a href="https://github.com/nf-core/rnaseq" target="_blank" rel="noopener noreferrer"><span class="example-index">02</span><span><strong>nf-core/rnaseq</strong><small>Pipeline comunitário de análise de RNA-seq</small></span><span class="example-link" aria-hidden="true">↗</span></a>
+          <a href="https://github.com/Illumina/dragen-aws-batch-quickstart" target="_blank" rel="noopener noreferrer"><span class="example-index">03</span><span><strong>Illumina · DRAGEN</strong><small>Exemplo público de repositório de uma empresa</small></span><span class="example-link" aria-hidden="true">↗</span></a>
         </div>
         <p class="source-note">Os exemplos são ligações reais. O conteúdo e os números dos repositórios podem mudar.</p>
       </div>
     </section>
 
-    <section class="slide closing" id="slide-15" data-title="Agora és tu" aria-roledescription="slide" aria-label="Slide 15: transição para a prática">
-      <div class="slide-inner closing-layout"><div><h2>Agora és tu.</h2><p class="lead">Cria a tua cópia, muda o README e publica o teu primeiro commit.</p><div class="closing-steps"><span>1. Conta e Git</span><span>2. Fork e clone</span><span>3. Editar</span><span>4. Status · add · commit · push</span></div></div><div class="closing-link"><span>Repositório e roteiro</span><img class="workshop-qr" src="assets/workshop-qr.svg" alt="Código QR para github.com/RiquiFeup/workshop_git"><a class="repo-url" href="https://github.com/RiquiFeup/workshop_git" target="_blank" rel="noopener">github.com/RiquiFeup/workshop_git</a><a class="guide-url" href="https://github.com/RiquiFeup/workshop_git/blob/main/guia/roteiro.md" target="_blank" rel="noopener">Abrir o guia passo a passo <span aria-hidden="true">↗</span></a><small>Navegação: setas ou Espaço · índice: tecla O</small></div></div>
-      <div class="closing-brands"><img src="assets/brand/armislab-wordmark.png" alt="ArmisLAB FEUP"><img src="../nubi_logo.jpg" alt="NUBI"></div>
+    <section class="slide closing" id="slide-15" data-title="Começar a prática" aria-roledescription="slide" aria-label="Slide 15: transição para a prática">
+      <div class="slide-inner closing-layout"><div><h2>Agora és tu.</h2><p class="lead">Segue os próximos slides, muda o README e publica o teu primeiro commit.</p><div class="closing-steps"><span>1. Conta e Git</span><span>2. Fork e clone</span><span>3. Editar</span><span>4. Status · add · commit · push · log</span></div></div><div class="closing-link"><span>Repositório e roteiro</span><img class="workshop-qr" src="assets/workshop-qr.svg" alt="Código QR para github.com/RiquiFeup/workshop_git"><a class="repo-url" href="https://github.com/RiquiFeup/workshop_git" target="_blank" rel="noopener noreferrer">github.com/RiquiFeup/workshop_git</a><a class="guide-url" href="https://github.com/RiquiFeup/workshop_git/blob/main/guia/roteiro.md" target="_blank" rel="noopener noreferrer">Abrir o guia passo a passo <span aria-hidden="true">↗</span></a><small>Navegação: setas ou Espaço · índice: tecla O</small></div></div>
+      <div class="closing-brands"><img src="assets/brand/armislab-transparent.png" alt="ArmisLAB FEUP"><img src="../nubi_logo.png" alt="NUBI"></div>
+    </section>
+    <section class="slide practice" id="slide-16" data-title="Conta e instalação" aria-roledescription="slide" aria-label="Slide 16: criar conta e instalar Git">
+      <div class="slide-inner practice-layout">
+        <div class="practice-intro">
+          <span class="practice-time">14:30–15:00 · preparação</span><h2>Primeiro, conta e Git.</h2>
+          <p class="lead">Cria ou abre a tua conta GitHub. Confirma o email. Depois verifica se Git funciona.</p>
+          <a class="practice-link" href="https://github.com/signup" target="_blank" rel="noopener noreferrer">Criar conta no GitHub ↗</a>
+          <p class="aside">Escolhe o teu sistema para ver um caminho de instalação. <a href="https://github.com/RiquiFeup/workshop_git/blob/main/guia/wsl-opcional.md" target="_blank" rel="noopener noreferrer">WSL é opcional ↗</a></p>
+        </div>
+        <div class="practice-side">
+          <div class="os-tabs" role="tablist" aria-label="Sistema operativo">
+            <button type="button" role="tab" id="tab-windows" aria-controls="panel-windows" aria-selected="true">Windows</button>
+            <button type="button" role="tab" id="tab-macos" aria-controls="panel-macos" aria-selected="false" tabindex="-1">macOS</button>
+            <button type="button" role="tab" id="tab-linux" aria-controls="panel-linux" aria-selected="false" tabindex="-1">Linux</button>
+          </div>
+          <div class="os-panel" role="tabpanel" id="panel-windows" aria-labelledby="tab-windows">
+            <h3>Git for Windows + Git Bash</h3><p>Usa a <a href="https://git-scm.com/install/windows" target="_blank" rel="noopener noreferrer">página oficial</a> ou instala pelo PowerShell:</p>
+            <div class="code-line"><code id="install-windows">winget install --id Git.Git -e --source winget</code><button type="button" class="copy-command" data-copy-target="install-windows">Copiar</button></div>
+            <p>Abre <strong>Git Bash</strong> depois da instalação. <a href="https://github.com/RiquiFeup/workshop_git/blob/main/guia/instalar-windows.md" target="_blank" rel="noopener noreferrer">Guia Windows ↗</a></p>
+          </div>
+          <div class="os-panel" role="tabpanel" id="panel-macos" aria-labelledby="tab-macos" hidden>
+            <h3>Terminal + ferramentas da Apple</h3><p>Se Git ainda não existir, instala as Command Line Tools:</p>
+            <div class="code-line"><code id="install-macos">xcode-select --install</code><button type="button" class="copy-command" data-copy-target="install-macos">Copiar</button></div>
+            <p><a href="https://github.com/RiquiFeup/workshop_git/blob/main/guia/instalar-macos.md" target="_blank" rel="noopener noreferrer">Guia macOS ↗</a></p>
+          </div>
+          <div class="os-panel" role="tabpanel" id="panel-linux" aria-labelledby="tab-linux" hidden>
+            <h3>Terminal da tua distribuição</h3><p>Exemplo para Ubuntu/Debian. Para outras distribuições, abre o guia.</p>
+            <div class="code-line"><code id="install-linux">sudo apt update &amp;&amp; sudo apt install git</code><button type="button" class="copy-command" data-copy-target="install-linux">Copiar</button></div>
+            <p><a href="https://github.com/RiquiFeup/workshop_git/blob/main/guia/instalar-linux.md" target="_blank" rel="noopener noreferrer">Guia Linux ↗</a></p>
+          </div>
+          <div class="code-line"><code id="verify-git">git --version</code><button type="button" class="copy-command" data-copy-target="verify-git">Copiar</button></div>
+          <p class="checkpoint">Conseguiste? O terminal mostra <strong>git version</strong> e um número.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide practice" id="slide-17" data-title="Identidade Git" aria-roledescription="slide" aria-label="Slide 17: configurar a identidade dos commits">
+      <div class="slide-inner practice-layout">
+        <div class="practice-intro"><span class="practice-time">14:30–15:00 · preparação</span><h2>O commit precisa de um autor.</h2><p class="lead">Escolhe o nome que queres mostrar no histórico. Para o email, podes usar o endereço <code>noreply</code> da tua conta GitHub.</p><p class="aside">Substitui os exemplos antes de executar. Nunca escrevas uma password ou token nestes comandos.</p></div>
+        <div class="practice-side">
+          <p class="instruction-label">No terminal, escreve:</p>
+          <div class="code-stack"><code>git config --global user.name "O Teu Nome"</code><code>git config --global user.email "O_TEU_EMAIL_OU_NOREPLY"</code></div>
+          <p>Encontra o teu endereço <code>noreply</code> em <a href="https://github.com/settings/emails" target="_blank" rel="noopener noreferrer">GitHub → Settings → Emails ↗</a>.</p>
+          <div class="code-line"><code id="verify-name">git config --global user.name</code><button type="button" class="copy-command" data-copy-target="verify-name">Copiar</button></div>
+          <p class="checkpoint">Conseguiste? O último comando mostra o nome que escolheste.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide practice" id="slide-18" data-title="Fork" aria-roledescription="slide" aria-label="Slide 18: criar a própria cópia com Fork">
+      <div class="slide-inner practice-layout">
+        <div class="practice-intro"><span class="practice-time">15:00–15:05 · cópia online</span><h2>Cria a tua cópia no GitHub.</h2><p class="lead">Abre o repositório do workshop. Clica em <strong>Fork</strong> e depois em <strong>Create fork</strong>.</p><p class="aside">Escolhe a <strong>tua conta</strong> como destino. É essa cópia que vais poder publicar.</p></div>
+        <div class="practice-side fork-figure"><div class="repo-address"><span>original</span><strong>RiquiFeup / workshop_git</strong></div><span class="fork-arrow" aria-hidden="true">↓</span><div class="repo-address own"><span>o teu Fork</span><strong>TEU_UTILIZADOR / workshop_git</strong></div><a class="practice-link" href="https://github.com/RiquiFeup/workshop_git/fork" target="_blank" rel="noopener noreferrer">Abrir Fork do workshop ↗</a><p class="checkpoint">Conseguiste? O teu utilizador aparece antes de <strong>/workshop_git</strong>.</p></div>
+      </div>
+    </section>
+
+    <section class="slide practice" id="slide-19" data-title="Clone" aria-roledescription="slide" aria-label="Slide 19: clonar o próprio Fork">
+      <div class="slide-inner practice-layout">
+        <div class="practice-intro"><span class="practice-time">15:05–15:10 · cópia local</span><h2>Traz o teu Fork para o computador.</h2><p class="lead">Na página <strong>do teu Fork</strong>, clica em <strong>Code → HTTPS</strong> e copia o endereço.</p><p class="aside">No terminal, escreve <code>git clone</code>, um espaço e cola o endereço. O URL tem de conter o teu utilizador.</p></div>
+        <div class="practice-side">
+          <div class="code-stack"><code>git clone https://github.com/TEU_UTILIZADOR/workshop_git.git</code></div>
+          <p>O comando acima é um exemplo. Substitui <strong>TEU_UTILIZADOR</strong> ou usa o URL copiado em Code.</p>
+          <div class="code-line"><code id="enter-repo">cd workshop_git</code><button type="button" class="copy-command" data-copy-target="enter-repo">Copiar</button></div>
+          <div class="code-line"><code id="check-remote">git remote -v</code><button type="button" class="copy-command" data-copy-target="check-remote">Copiar</button></div>
+          <p class="checkpoint">Conseguiste? <code>origin</code> aponta para <strong>TEU_UTILIZADOR/workshop_git</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide practice" id="slide-20" data-title="Editar README" aria-roledescription="slide" aria-label="Slide 20: editar o modelo de README">
+      <div class="slide-inner practice-layout">
+        <div class="practice-intro"><span class="practice-time">15:10–15:18 · primeira alteração</span><h2>Faz o README falar de ti.</h2><p class="lead">Abre <code>exercicio/README.md</code> na pasta clonada. Muda o título e duas linhas de «Sobre mim».</p><p class="aside">Podes usar um pseudónimo. Badges, ícones e GIF são exemplos opcionais. Não publiques contactos, número de estudante, passwords ou tokens.</p></div>
+        <div class="practice-side readme-preview"><span>exercicio/README.md</span><strong>Olá, sou [NOME OU PSEUDÓNIMO] 👋</strong><p>Tenho curiosidade sobre [TEMA].</p><p>Gostava de investigar [PERGUNTA].</p><a class="practice-link" href="https://github.com/RiquiFeup/workshop_git/blob/main/exercicio/README.md" target="_blank" rel="noopener noreferrer">Ver o modelo completo ↗</a><p class="checkpoint">Conseguiste? Guardaste o ficheiro no teu computador.</p></div>
+      </div>
+    </section>
+    <section class="slide practice" id="slide-21" data-title="Status e add" aria-roledescription="slide" aria-label="Slide 21: verificar e preparar a alteração">
+      <div class="slide-inner practice-layout">
+        <div class="practice-intro"><span class="practice-time">15:18–15:21 · verificar e escolher</span><h2>Vê a mudança. Depois escolhe-a.</h2><p class="lead"><code>status</code> mostra o que mudou. <code>add</code> escolhe o README para o próximo commit.</p><p class="aside">Executa os comandos dentro da pasta <code>workshop_git</code>, um de cada vez.</p></div>
+        <div class="practice-side">
+          <div class="code-line"><code id="practice-status">git status</code><button type="button" class="copy-command" data-copy-target="practice-status">Copiar</button></div>
+          <div class="code-line"><code id="practice-add">git add exercicio/README.md</code><button type="button" class="copy-command" data-copy-target="practice-add">Copiar</button></div>
+          <div class="code-line"><code id="practice-status-again">git status</code><button type="button" class="copy-command" data-copy-target="practice-status-again">Copiar</button></div>
+          <p class="checkpoint">Conseguiste? O README aparece em <strong>Changes to be committed</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide practice" id="slide-22" data-title="Commit e push" aria-roledescription="slide" aria-label="Slide 22: guardar e enviar o commit">
+      <div class="slide-inner practice-layout">
+        <div class="practice-intro"><span class="practice-time">15:21–15:27 · guardar e enviar</span><h2>Guarda uma versão. Envia-a.</h2><p class="lead"><code>commit</code> grava a versão no computador. <code>push</code> envia-a para o teu Fork no GitHub.</p><p class="aside">Se o navegador pedir autenticação, entra na tua conta. Não partilhes códigos nem credenciais.</p></div>
+        <div class="practice-side">
+          <div class="code-line"><code id="practice-commit">git commit -m "Personaliza o meu README"</code><button type="button" class="copy-command" data-copy-target="practice-commit">Copiar</button></div>
+          <div class="code-line"><code id="practice-push">git push origin main</code><button type="button" class="copy-command" data-copy-target="practice-push">Copiar</button></div>
+          <p class="checkpoint">Conseguiste? O terminal indica que <strong>main</strong> foi atualizado.</p>
+          <a class="practice-link" href="https://github.com/RiquiFeup/workshop_git/blob/main/guia/erros-frequentes.md" target="_blank" rel="noopener noreferrer">Se houver erro, abre a ajuda ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide practice" id="slide-23" data-title="Log e verificação" aria-roledescription="slide" aria-label="Slide 23: git log e confirmação no GitHub">
+      <div class="slide-inner practice-layout">
+        <div class="practice-intro"><span class="practice-time">15:27–15:30 · confirmar</span><h2>Encontra o teu commit.</h2><p class="lead"><code>git log</code> mostra as versões guardadas. Depois abre o teu Fork e procura a mesma mensagem no GitHub.</p><p class="aside">O teu commit deve ser o primeiro da lista.</p></div>
+        <div class="practice-side">
+          <div class="code-line"><code id="practice-log">git log --oneline -5</code><button type="button" class="copy-command" data-copy-target="practice-log">Copiar</button></div>
+          <div class="log-demo" aria-label="Exemplo de saída do git log"><code>8b3c1a2 Personaliza o meu README</code><code>931369f Build Git and GitHub workshop materials</code></div>
+          <p class="checkpoint">Conseguiste? Vês <strong>Personaliza o meu README</strong> no terminal e na página do teu Fork.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide practice" id="slide-24" data-title="Dúvidas e erros" aria-roledescription="slide" aria-label="Slide 24: perguntas e resolução de erros">
+      <div class="slide-inner">
+        <span class="practice-time">Ajuda durante a prática</span><h2>Ficaste bloqueado?</h2>
+        <p class="lead narrow">Abre a dúvida que corresponde ao que estás a ver. Mostra a mensagem de erro a quem te está a apoiar.</p>
+        <div class="faq-grid">
+          <details><summary>“not a git repository”</summary><p>Entra na pasta clonada: <code>cd workshop_git</code>. Depois repete <code>git status</code>.</p></details>
+          <details><summary>Push: 403 ou “Permission denied”</summary><p>Executa <code>git remote -v</code>. <code>origin</code> deve incluir o teu utilizador, pois tens de clonar o teu Fork.</p></details>
+          <details><summary>O commit pede nome e email</summary><p>Volta ao slide «Identidade Git» e configura ambos. Podes usar o email <code>noreply</code> do GitHub.</p></details>
+          <details><summary>“nothing to commit”</summary><p>Confirma que editaste e guardaste <code>exercicio/README.md</code> dentro da pasta clonada. Se já fizeste o commit, segue para <code>git push</code>.</p></details>
+        </div>
+        <a class="practice-link" href="https://github.com/RiquiFeup/workshop_git/blob/main/guia/erros-frequentes.md" target="_blank" rel="noopener noreferrer">Abrir todas as soluções e perguntas ↗</a>
+      </div>
+    </section>
+
+    <section class="slide practice final-resources" id="slide-25" data-title="Recursos finais" aria-roledescription="slide" aria-label="Slide 25: recursos para depois do workshop">
+      <div class="slide-inner">
+        <span class="practice-time">Depois do workshop</span><h2>Continua a explorar.</h2>
+        <p class="lead narrow">Tens o teu primeiro commit. Guarda estes links para quando quiseres fazer mais.</p>
+        <div class="resource-links">
+          <a href="https://github.com/RiquiFeup/workshop_git/blob/main/guia/roteiro.md" target="_blank" rel="noopener noreferrer"><strong>Roteiro e ajuda</strong><span>Rever os comandos do workshop</span><span aria-hidden="true">↗</span></a>
+          <a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener noreferrer"><strong>Pro Git</strong><span>Aprender Git ao teu ritmo</span><span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme" target="_blank" rel="noopener noreferrer"><strong>Awesome GitHub Profile README</strong><span>Exemplos para inspiração</span><span aria-hidden="true">↗</span></a>
+          <a href="https://profile-readme-generator.com/en" target="_blank" rel="noopener noreferrer"><strong>Profile README Generator</strong><span>Ferramenta externa; revê o que publicas</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
     </section>
   </main>
 
   <nav class="deck-controls" aria-label="Navegação da apresentação">
     <button id="prev" type="button" aria-label="Slide anterior" title="Slide anterior (seta esquerda)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
-    <span id="counter" aria-live="polite" aria-atomic="true">01 / 15</span>
+    <span id="counter" aria-live="polite" aria-atomic="true">01 / 25</span>
     <button id="next" type="button" aria-label="Slide seguinte" title="Slide seguinte (seta direita)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
     <button id="overview-toggle" type="button" aria-label="Abrir índice de slides" title="Índice de slides (O)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></button>
   </nav>
+  <p id="copy-status" class="visually-hidden" aria-live="polite"></p>
   <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
   <dialog id="overview" aria-label="Índice da apresentação"><div class="overview-head"><h2>Índice</h2><button id="overview-close" type="button" aria-label="Fechar índice">Fechar ×</button></div><ol id="overview-list"></ol><p>Usa as setas, Espaço ou toque para avançar. Pressiona <kbd>O</kbd> para abrir este índice.</p></dialog>
 </body>

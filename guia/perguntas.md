@@ -24,6 +24,10 @@ Não. `git add exercicio/README.md` escolhe a alteração que entrará no próxi
 
 Sempre que não tens a certeza do que mudou ou do que falta guardar. É seguro executá-lo várias vezes: apenas mostra informação.
 
+## Para que serve `git log`?
+
+Mostra os commits guardados no repositório. Usa `git log --oneline -5` para veres os cinco mais recentes, cada um numa linha. Não altera ficheiros nem envia informação.
+
 ## Preciso de criar uma branch?
 
 Não neste exercício. **Branch** é uma linha de trabalho alternativa, útil quando se desenvolve uma mudança sem mexer logo na linha principal. Vamos trabalhar na branch principal, que neste repositório se chama `main`.
@@ -31,6 +35,10 @@ Não neste exercício. **Branch** é uma linha de trabalho alternativa, útil qu
 ## O meu README tem de mostrar dados pessoais?
 
 Não. Podes usar um pseudónimo. Não incluas número de estudante, contacto ou informação que não queiras tornar pública. O teu *fork* poderá ser visto por outras pessoas se for público.
+
+## Tenho de manter os badges e ícones do modelo?
+
+Não. São exemplos opcionais e alguns carregam imagens de serviços externos. Mantém apenas o que te representa; para concluir o workshop basta personalizar o título e duas linhas de «Sobre mim».
 
 ## O email do commit ficará público?
 
