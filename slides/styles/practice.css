@@ -1,5 +1,6 @@
 /* Interação e guias projetáveis. Todas as cores derivam da apresentação principal. */
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.brand-nubi, .closing-brands img:last-child { transform: scale(1.4); transform-origin: left center; }
 .slide.is-active {
   animation: slide-enter .38s cubic-bezier(.2,.8,.2,1) both;
 }
