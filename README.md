@@ -8,15 +8,15 @@ Aqui estão a apresentação, os passos a seguir durante a sessão e um pequeno 
 
 1. Abre o [roteiro do workshop](guia/roteiro.md). Ele acompanha os 90 minutos e indica o que fazer em cada etapa.
 2. Se ainda não tens Git, escolhe o [guia para Windows](guia/instalar-windows.md), [macOS](guia/instalar-macos.md) ou [Linux](guia/instalar-linux.md). [WSL](guia/wsl-opcional.md) é opcional.
-3. Consulta a [apresentação](slides/index.html) para rever as ideias. Depois da publicação do GitHub Pages, o link para a versão de projeção estará também na [página inicial](index.html).
+3. Consulta a [apresentação para projeção](https://riquifeup.github.io/workshop_git/) para rever as ideias.
 4. Na prática, vais criar um **Fork** deste repositório, clonar a tua cópia e preencher o [modelo pessoal](exercicio/README.md).
 
 ## Índice
 
 | Material | Para quê |
 | --- | --- |
-| [Página inicial](index.html) | Entrada para a versão publicada no GitHub Pages |
-| [Slides](slides/index.html) | Explicação visual de Git, GitHub e comandos essenciais |
+| [Apresentação no GitHub Pages](https://riquifeup.github.io/workshop_git/) | Slides para projetar ou rever no navegador |
+| [Fonte dos slides](slides/index.html) | HTML da apresentação neste repositório |
 | [Roteiro](guia/roteiro.md) | Passos e verificações durante a sessão |
 | [Instalar no Windows](guia/instalar-windows.md) · [macOS](guia/instalar-macos.md) · [Linux](guia/instalar-linux.md) | Preparar o computador |
 | [WSL opcional](guia/wsl-opcional.md) | Para quem usa ou precisa de Linux dentro do Windows |
