@@ -1,0 +1,51 @@
+# Perguntas rápidas
+
+## Preciso de saber programar?
+
+Não. Neste exercício editas um ficheiro de texto e aprendes a guardar e partilhar essa alteração. O mesmo processo também serve para código, análises e documentação.
+
+## Qual é a diferença entre Git e GitHub?
+
+**Git** é o programa que regista versões no teu computador. **GitHub** é o serviço online onde podes guardar e partilhar um repositório. Podes usar Git sem GitHub.
+
+## O que é um repositório?
+
+É uma pasta de projeto com histórico de alterações. Neste workshop, contém os slides, os guias e o teu exercício.
+
+## Porque faço Fork antes de Clone?
+
+**Fork** cria uma cópia do [repositório do workshop](https://github.com/RiquiFeup/workshop_git) na tua conta GitHub. **Clone** descarrega essa tua cópia para o computador. Assim podes fazer `push` para a tua conta sem precisares de permissão para alterar o repositório do formador.
+
+## `git add` envia o ficheiro para o GitHub?
+
+Não. `git add exercicio/README.md` escolhe a alteração que entrará no próximo commit local. `git commit` guarda essa versão no teu computador. `git push` envia o commit para a tua cópia no GitHub.
+
+## Quando uso `git status`?
+
+Sempre que não tens a certeza do que mudou ou do que falta guardar. É seguro executá-lo várias vezes: apenas mostra informação.
+
+## Preciso de criar uma branch?
+
+Não neste exercício. **Branch** é uma linha de trabalho alternativa, útil quando se desenvolve uma mudança sem mexer logo na linha principal. Vamos trabalhar na branch principal, que neste repositório se chama `main`.
+
+## O meu README tem de mostrar dados pessoais?
+
+Não. Podes usar um pseudónimo. Não incluas número de estudante, contacto ou informação que não queiras tornar pública. O teu *fork* poderá ser visto por outras pessoas se for público.
+
+## O email do commit ficará público?
+
+O email configurado em Git pode aparecer nos commits publicados. Se preferires, configura o endereço `noreply` mostrado em [GitHub → Settings → Emails](https://github.com/settings/emails) **antes de fazer o commit**.
+
+## Se fechar o terminal, perco o trabalho?
+
+Não. As alterações guardadas no ficheiro continuam no computador; os commits também. Volta a abrir o terminal, entra na pasta clonada e executa `git status` para perceber onde paraste. Um `push` concluído deixa também o commit no GitHub.
+
+## Onde confirmo que consegui?
+
+Abre **o teu *fork*** no GitHub, entra em `exercicio/README.md` e confirma que aparecem as tuas alterações. O histórico deve mostrar o teu novo commit. Se não aparecer, confirma `git status` e volta ao passo de `push` no [roteiro](roteiro.md).
+
+## Se vir um erro?
+
+Procura a primeira linha da mensagem em [Erros frequentes](erros-frequentes.md). Durante a sessão, chama o apoio da sala e mostra o terminal.
+
+Fontes: [Git básico — Pro Git](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository), [GitHub Docs: forks](https://docs.github.com/en/pull-requests/how-tos/work-with-forks/fork-a-repo), [email dos commits](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).

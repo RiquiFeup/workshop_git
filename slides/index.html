@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f5">
+  <meta name="description" content="Apresentação introdutória a Git e GitHub para estudantes de Bioinformática. ArmisLAB × NUBI.">
+  <title>Git & GitHub — ArmisLAB × NUBI</title>
+  <link rel="stylesheet" href="styles/slides.css">
+  <script src="scripts/slides.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#slide-1">Ir para a apresentação</a>
+  <main id="deck" aria-label="Apresentação Git e GitHub">
+
+    <section class="slide cover is-active" id="slide-1" data-title="Abertura" aria-roledescription="slide" aria-label="Slide 1: Git e GitHub">
+      <div class="cover-grid" aria-hidden="true">
+        <svg viewBox="0 0 680 690" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="mesh" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0872cf"/><stop offset=".55" stop-color="#7855da"/><stop offset="1" stop-color="#ad33ba"/></linearGradient></defs><g fill="none" stroke="url(#mesh)" stroke-width="3"><path d="M45 28 156 96 272 43 381 127 516 43 652 110M156 96l-28 142 139 74 114-185 116 160 155-177M128 238l-84 146 146 102 77-174 230-25 70 156 85-333M190 486l137 136 170-69 70-110 85 75"/><path d="M272 43 267 312 381 127M44 384l223-72 60 310M497 287l155 231-155 35"/></g><g fill="url(#mesh)"><circle cx="45" cy="28" r="10"/><circle cx="156" cy="96" r="11"/><circle cx="272" cy="43" r="13"/><circle cx="381" cy="127" r="12"/><circle cx="516" cy="43" r="14"/><circle cx="652" cy="110" r="11"/><circle cx="128" cy="238" r="12"/><circle cx="267" cy="312" r="15"/><circle cx="497" cy="287" r="13"/><circle cx="44" cy="384" r="12"/><circle cx="190" cy="486" r="15"/><circle cx="327" cy="622" r="10"/><circle cx="497" cy="553" r="12"/><circle cx="567" cy="443" r="13"/><circle cx="652" cy="518" r="11"/></g></svg>
+      </div>
+      <div class="cover-content">
+        <div class="brand-lockup" aria-label="ArmisLAB e NUBI">
+          <img class="brand-armis" src="assets/brand/armislab-wordmark.png" alt="ArmisLAB FEUP">
+          <span aria-hidden="true" class="brand-divider"></span>
+          <img class="brand-nubi" src="../nubi_logo.jpg" alt="NUBI, Núcleo Universitário de Bioinformática">
+        </div>
+        <div class="cover-copy">
+          <h1>Git<span class="amp"> & </span>GitHub</h1>
+          <p>Uma forma clara de guardar mudanças, trabalhar em conjunto e partilhar projetos.</p>
+          <div class="cover-meta"><span>Workshop introdutório</span><span>Bioinformática · 1.º ano</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-2" data-title="O problema" aria-roledescription="slide" aria-label="Slide 2: o problema das versões">
+      <div class="slide-inner split">
+        <div class="text-col">
+          <h2>Qual é a versão certa?</h2>
+          <p class="lead">Um ficheiro muda. Duas pessoas editam. De repente, o nome do ficheiro é a única memória do trabalho.</p>
+          <p class="aside">Num relatório, num script ou num protocolo, precisamos de saber <strong>o que mudou, quando e porquê</strong>.</p>
+        </div>
+        <div class="file-stack" aria-label="Exemplo de ficheiros com versões confusas">
+          <div class="paper"><span class="file-icon">TXT</span><span>analise_final.docx</span></div>
+          <div class="paper"><span class="file-icon">TXT</span><span>analise_final_v2.docx</span></div>
+          <div class="paper"><span class="file-icon">TXT</span><span>analise_final_v2_agora_sim.docx</span></div>
+          <div class="paper paper-question"><span class="question-mark">?</span><span>Qual é a versão certa?</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-3" data-title="A origem" aria-roledescription="slide" aria-label="Slide 3: a origem do Git">
+      <div class="slide-inner history-layout">
+        <div>
+          <h2>O Git nasceu de um problema de colaboração.</h2>
+          <p class="lead">Em 2005, o desenvolvimento do Linux precisava de uma forma rápida e fiável de acompanhar muitas alterações feitas por muitas pessoas.</p>
+        </div>
+        <div class="history-visual" role="img" aria-label="Muitos contributos convergem para uma história partilhada">
+          <div class="history-people"><span>pessoa A</span><span>pessoa B</span><span>pessoa C</span></div>
+          <svg viewBox="0 0 560 260" aria-hidden="true"><g fill="none" stroke-width="4" stroke-linecap="round"><path stroke="#8d2d19" d="M32 38 C160 38 200 122 300 122"/><path stroke="#6844a6" d="M32 124 H300"/><path stroke="#177ad0" d="M32 210 C160 210 200 122 300 122"/><path stroke="#222234" d="M300 122 H526"/></g><g fill="#8d2d19"><circle cx="32" cy="38" r="10"/></g><g fill="#6844a6"><circle cx="32" cy="124" r="10"/></g><g fill="#177ad0"><circle cx="32" cy="210" r="10"/></g><g fill="#222234"><circle cx="300" cy="122" r="12"/><circle cx="526" cy="122" r="12"/></g></svg>
+          <div class="history-caption"><span>alterações de várias pessoas</span><strong>uma história organizada</strong></div>
+        </div>
+        <p class="source-note">Fonte: <a href="https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git" target="_blank" rel="noopener">Pro Git · Short History of Git</a></p>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-4" data-title="Ideia principal" aria-roledescription="slide" aria-label="Slide 4: Git guarda a história do projeto">
+      <div class="slide-inner">
+        <h2>Git é a história do projeto.</h2>
+        <p class="lead narrow">Cada <strong>commit</strong> é um ponto guardado nessa história: alterações escolhidas, com uma mensagem que explica o passo.</p>
+        <div class="timeline" role="img" aria-label="Três commits em sequência: criar README, corrigir descrição, acrescentar recursos">
+          <div class="timeline-line"></div>
+          <div class="timeline-item"><span class="timeline-dot"></span><strong>Criar README</strong><small>primeiro passo</small></div>
+          <div class="timeline-item"><span class="timeline-dot"></span><strong>Corrigir descrição</strong><small>segundo passo</small></div>
+          <div class="timeline-item"><span class="timeline-dot"></span><strong>Juntar recursos</strong><small>terceiro passo</small></div>
+        </div>
+        <p class="bottom-statement">Assim podemos perceber como chegámos à versão atual.</p>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-5" data-title="Git e GitHub" aria-roledescription="slide" aria-label="Slide 5: diferença entre Git e GitHub">
+      <div class="slide-inner">
+        <h2>Git no computador. GitHub na web.</h2>
+        <div class="worlds">
+          <div class="world world-local"><span class="world-label">No teu computador</span><div class="world-icon laptop-icon" aria-hidden="true"><span></span></div><h3>Git</h3><p>Regista e organiza versões do projeto.</p></div>
+          <div class="world-bridge" aria-hidden="true"><svg viewBox="0 0 210 72"><path d="M8 36h190m-25-18 25 18-25 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>partilhar</span></div>
+          <div class="world world-remote"><span class="world-label">Na web</span><div class="world-icon browser-icon" aria-hidden="true"><span></span></div><h3>GitHub</h3><p>Publica repositórios e facilita colaboração.</p></div>
+        </div>
+        <p class="bottom-statement">Podes usar Git sem GitHub. Hoje vamos usar os dois.</p>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-6" data-title="Repositório" aria-roledescription="slide" aria-label="Slide 6: repositório">
+      <div class="slide-inner repo-layout">
+        <div><h2>Um repositório é a pasta do projeto com história.</h2><p class="lead">Lá dentro vivem os ficheiros e o registo das alterações guardadas com Git.</p><p class="aside">No workshop, vais copiar um repositório e editar o teu <strong>README</strong>: a página de entrada que explica o projeto.</p></div>
+        <div class="repo-window" aria-label="Exemplo de estrutura de um repositório">
+          <div class="window-bar"><i></i><i></i><i></i><span>workshop_git</span></div>
+          <div class="tree"><div class="tree-folder">▾ <strong>workshop_git</strong></div><div class="tree-row"><span class="tree-branch">├─</span> README.md <span class="tree-caption">← apresentação do projeto</span></div><div class="tree-row"><span class="tree-branch">├─</span> guia/</div><div class="tree-row"><span class="tree-branch">└─</span> exercicio/</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-7" data-title="O ciclo" aria-roledescription="slide" aria-label="Slide 7: visão geral do ciclo Git">
+      <div class="slide-inner">
+        <h2>O ciclo que vamos praticar</h2>
+        <p class="lead narrow">Alteras um ficheiro, escolhes o que guardar, registas esse passo e envias a tua história para o GitHub.</p>
+        <div class="flow" role="img" aria-label="Fluxo: editar, verificar com git status, escolher com git add, guardar com git commit, enviar com git push">
+          <div class="flow-step"><span class="flow-no">1</span><strong>Editar</strong><small>mudar o README</small></div><span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="flow-step"><span class="flow-no">2</span><strong>status</strong><small>ver o que mudou</small></div><span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="flow-step"><span class="flow-no">3</span><strong>add</strong><small>escolher alteração</small></div><span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="flow-step"><span class="flow-no">4</span><strong>commit</strong><small>guardar com mensagem</small></div><span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="flow-step flow-remote"><span class="flow-no">5</span><strong>push</strong><small>enviar ao GitHub</small></div>
+        </div>
+        <p class="flow-foot">O Git não guarda todas as alterações automaticamente. Tu decides quando criar cada commit.</p>
+      </div>
+    </section>
+
+    <section class="slide command-slide" id="slide-8" data-title="status" aria-roledescription="slide" aria-label="Slide 8: git status">
+      <div class="slide-inner command-layout">
+        <div><h2><code>git status</code></h2><p class="lead">Pergunta ao Git: <strong>“O que está diferente agora?”</strong></p><p class="aside">É o comando para te orientares. Podes usá-lo antes e depois de cada passo.</p></div>
+        <div class="terminal" aria-label="Exemplo de git status antes de guardar alterações"><div class="terminal-bar"><span></span><span></span><span></span><b>Terminal</b></div><div class="terminal-body"><p><em>$</em> git status</p><p class="term-muted">Changes not staged for commit:</p><p class="term-red">modified: exercicio/README.md</p><p class="term-explain">O README foi alterado, mas ainda não foi escolhido para o próximo commit.</p></div></div>
+      </div>
+    </section>
+
+    <section class="slide command-slide" id="slide-9" data-title="add" aria-roledescription="slide" aria-label="Slide 9: git add">
+      <div class="slide-inner command-layout">
+        <div><h2><code>git add</code></h2><p class="lead">Escolhe que alterações entram no <strong>próximo commit</strong>.</p><p class="aside">Hoje vamos escolher apenas o README que cada pessoa editou.</p></div>
+        <div class="staging-diagram" role="img" aria-label="README alterado passa para a área de preparação depois do comando git add exercicio/README.md"><div class="staging-before"><span class="stage-label">Alterado</span><strong>README.md</strong></div><div class="staging-arrow"><code>git add<br>exercicio/README.md</code><span aria-hidden="true">→</span></div><div class="staging-after"><span class="stage-label">Escolhido para guardar</span><strong>README.md</strong></div></div>
+      </div>
+    </section>
+
+    <section class="slide command-slide" id="slide-10" data-title="commit" aria-roledescription="slide" aria-label="Slide 10: git commit">
+      <div class="slide-inner command-layout">
+        <div><h2><code>git commit</code></h2><p class="lead">Guarda as alterações escolhidas como <strong>um passo na história</strong>.</p><p class="aside">A mensagem ajuda outras pessoas — e o teu “eu” do futuro — a perceber o que fizeste.</p></div>
+        <div class="commit-visual"><div class="commit-command"><span>$</span> git commit -m "Personaliza o meu README"</div><div class="commit-line"><span class="commit-dot"></span><span class="commit-dot current"></span></div><div class="commit-card"><strong>Personaliza o meu README</strong><small>novo ponto na história do projeto</small></div></div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-11" data-title="Fork e clone" aria-roledescription="slide" aria-label="Slide 11: fork e clone">
+      <div class="slide-inner">
+        <h2>Primeiro, trazemos o projeto para ti.</h2>
+        <p class="lead narrow"><strong>Fork</strong> cria uma cópia na tua conta do GitHub. <strong>Clone</strong> traz essa cópia para o teu computador.</p>
+        <div class="copy-flow" role="img" aria-label="Repositório do formador, fork para a tua conta GitHub, clone para o teu computador">
+          <div class="copy-place"><span>GitHub do formador</span><div class="copy-symbol">R</div><strong>repositório original</strong></div><div class="copy-connector"><span>Fork</span><svg viewBox="0 0 130 30"><path d="M2 15h122m-12-10 12 10-12 10" fill="none" stroke="currentColor" stroke-width="3"/></svg></div><div class="copy-place copy-own"><span>A tua conta GitHub</span><div class="copy-symbol">R</div><strong>a tua cópia</strong></div><div class="copy-connector"><span>Clone</span><svg viewBox="0 0 130 30"><path d="M2 15h122m-12-10 12 10-12 10" fill="none" stroke="currentColor" stroke-width="3"/></svg></div><div class="copy-place copy-local"><span>O teu computador</span><div class="copy-symbol">R</div><strong>pasta local</strong></div>
+        </div>
+        <p class="bottom-statement">Assim cada pessoa pode experimentar sem alterar o repositório original.</p>
+      </div>
+    </section>
+
+    <section class="slide command-slide" id="slide-12" data-title="push" aria-roledescription="slide" aria-label="Slide 12: git push">
+      <div class="slide-inner command-layout">
+        <div><h2><code>git push</code></h2><p class="lead">Envia os teus commits locais para <strong>a tua cópia no GitHub</strong>.</p><p class="aside">Depois, abre o repositório no navegador e confirma que o novo commit aparece no histórico.</p></div>
+        <div class="push-visual" role="img" aria-label="Commit no computador enviado para a cópia pessoal no GitHub"><div class="push-place"><span>computador</span><div class="push-track"><i></i><i></i><i class="latest"></i></div><strong>commit novo</strong></div><div class="push-arrow"><code>git push</code><span aria-hidden="true">→</span></div><div class="push-place destination"><span>GitHub</span><div class="push-track"><i></i><i></i><i class="latest"></i></div><strong>a tua cópia</strong></div></div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-13" data-title="Branch" aria-roledescription="slide" aria-label="Slide 13: o conceito de branch">
+      <div class="slide-inner branch-layout">
+        <div><h2>Uma branch é outro caminho de trabalho.</h2><p class="lead">Permite experimentar uma ideia sem mexer logo na linha principal do projeto.</p><p class="aside">Hoje basta reconhecer a ideia. O exercício fica na branch principal, normalmente chamada <code>main</code>.</p></div>
+        <div class="branch-figure" role="img" aria-label="História principal main e uma branch de experiência que se separa"><svg viewBox="0 0 600 340"><path d="M58 238 H548" fill="none" stroke="#8d2d19" stroke-width="7" stroke-linecap="round"/><path d="M208 238 C275 238 271 95 358 95 H548" fill="none" stroke="#6550b4" stroke-width="7" stroke-linecap="round"/><g fill="#8d2d19"><circle cx="58" cy="238" r="15"/><circle cx="208" cy="238" r="15"/><circle cx="388" cy="238" r="15"/><circle cx="548" cy="238" r="15"/></g><g fill="#6550b4"><circle cx="358" cy="95" r="15"/><circle cx="548" cy="95" r="15"/></g></svg><span class="branch-label side">ideia em experiência</span><span class="branch-label main">main</span></div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-14" data-title="Ver ao vivo" aria-roledescription="slide" aria-label="Slide 14: projetos reais">
+      <div class="slide-inner examples-layout">
+        <div><h2>Isto já faz parte da Bioinformática.</h2><p class="lead narrow">Abre um repositório e repara no README, nos ficheiros e no histórico de commits.</p></div>
+        <div class="example-list">
+          <a href="https://github.com/biopython/biopython" target="_blank" rel="noopener"><span class="example-index">01</span><span><strong>Biopython</strong><small>Ferramentas abertas de Bioinformática em Python</small></span><span class="example-link" aria-hidden="true">↗</span></a>
+          <a href="https://github.com/nf-core/rnaseq" target="_blank" rel="noopener"><span class="example-index">02</span><span><strong>nf-core/rnaseq</strong><small>Pipeline comunitário de análise de RNA-seq</small></span><span class="example-link" aria-hidden="true">↗</span></a>
+          <a href="https://github.com/Illumina/dragen-aws-batch-quickstart" target="_blank" rel="noopener"><span class="example-index">03</span><span><strong>Illumina · DRAGEN</strong><small>Exemplo público de repositório de uma empresa</small></span><span class="example-link" aria-hidden="true">↗</span></a>
+        </div>
+        <p class="source-note">Os exemplos são ligações reais. O conteúdo e os números dos repositórios podem mudar.</p>
+      </div>
+    </section>
+
+    <section class="slide closing" id="slide-15" data-title="Agora és tu" aria-roledescription="slide" aria-label="Slide 15: transição para a prática">
+      <div class="slide-inner closing-layout"><div><h2>Agora és tu.</h2><p class="lead">Cria a tua cópia, muda o README e publica o teu primeiro commit.</p><div class="closing-steps"><span>1. Conta e Git</span><span>2. Fork e clone</span><span>3. Editar</span><span>4. Status · add · commit · push</span></div></div><div class="closing-link"><span>Repositório e roteiro</span><img class="workshop-qr" src="assets/workshop-qr.svg" alt="Código QR para github.com/RiquiFeup/workshop_git"><a class="repo-url" href="https://github.com/RiquiFeup/workshop_git" target="_blank" rel="noopener">github.com/RiquiFeup/workshop_git</a><a class="guide-url" href="https://github.com/RiquiFeup/workshop_git/blob/main/guia/roteiro.md" target="_blank" rel="noopener">Abrir o guia passo a passo <span aria-hidden="true">↗</span></a><small>Navegação: setas ou Espaço · índice: tecla O</small></div></div>
+      <div class="closing-brands"><img src="assets/brand/armislab-wordmark.png" alt="ArmisLAB FEUP"><img src="../nubi_logo.jpg" alt="NUBI"></div>
+    </section>
+  </main>
+
+  <nav class="deck-controls" aria-label="Navegação da apresentação">
+    <button id="prev" type="button" aria-label="Slide anterior" title="Slide anterior (seta esquerda)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
+    <span id="counter" aria-live="polite" aria-atomic="true">01 / 15</span>
+    <button id="next" type="button" aria-label="Slide seguinte" title="Slide seguinte (seta direita)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+    <button id="overview-toggle" type="button" aria-label="Abrir índice de slides" title="Índice de slides (O)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></button>
+  </nav>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+  <dialog id="overview" aria-label="Índice da apresentação"><div class="overview-head"><h2>Índice</h2><button id="overview-close" type="button" aria-label="Fechar índice">Fechar ×</button></div><ol id="overview-list"></ol><p>Usa as setas, Espaço ou toque para avançar. Pressiona <kbd>O</kbd> para abrir este índice.</p></dialog>
+</body>
+</html>
