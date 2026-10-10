@@ -12,6 +12,10 @@ Não. Neste exercício editas um ficheiro de texto e aprendes a guardar e partil
 
 É uma pasta de projeto com histórico de alterações. Neste workshop, contém os slides, os guias e o teu exercício.
 
+## Preciso de ter Visual Studio Code?
+
+Vamos usá-lo para editar o README. No início da prática, o [slide 16](https://riquifeup.github.io/workshop_git/slides/#slide-16) ajuda-te a verificar se abre e aponta para a [instalação oficial](instalar-vscode.md). Não precisas de saber programar nem de instalar extensões.
+
 ## Porque faço Fork antes de Clone?
 
 **Fork** cria uma cópia do [repositório do workshop](https://github.com/RiquiFeup/workshop_git) na tua conta GitHub. **Clone** descarrega essa tua cópia para o computador. Assim podes fazer `push` para a tua conta sem precisares de permissão para alterar o repositório do formador.
@@ -28,7 +32,19 @@ Sempre que não tens a certeza do que mudou ou do que falta guardar. É seguro e
 
 Mostra os commits guardados no repositório. Usa `git log --oneline -5` para veres os cinco mais recentes, cada um numa linha. Não altera ficheiros nem envia informação.
 
-## Preciso de criar uma branch?
+## Qual é a diferença entre `git push` e `git pull`?
+
+`push` envia commits locais para o repositório remoto. `pull` traz alterações do remoto e tenta integrá-las na branch local em que estás. No [slide 12](https://riquifeup.github.io/workshop_git/slides/#slide-12), podes clicar para ver o sentido da atualização. Na prática, o teu primeiro envio usa `push`.
+
+## O que faz `git merge`?
+
+Integra alterações de uma branch noutra. Uma **branch** é um caminho de trabalho dentro do mesmo repositório. No [slide 13](https://riquifeup.github.io/workshop_git/slides/#slide-13), a branch `experimento` é integrada em `main`. Se as duas mudaram a mesma parte de um ficheiro, pode ser necessário resolver um conflito.
+
+## A ordem da teoria é a ordem dos comandos da prática?
+
+A teoria segue `status → add → commit → push → log → pull → merge → fork` para explicar os conceitos. Na prática, fazes **Fork antes de Clone**, editas o README e usas `status`, `add`, `commit`, `push` e `log`. `pull` e `merge` ficam como conceitos para quando trabalhares com alterações de outras pessoas.
+
+## Preciso de criar uma branch no exercício?
 
 Não neste exercício. **Branch** é uma linha de trabalho alternativa, útil quando se desenvolve uma mudança sem mexer logo na linha principal. Vamos trabalhar na branch principal, que neste repositório se chama `main`.
 
@@ -56,4 +72,4 @@ Abre **o teu *fork*** no GitHub, entra em `exercicio/README.md` e confirma que a
 
 Procura a primeira linha da mensagem em [Erros frequentes](erros-frequentes.md). Durante a sessão, chama o apoio da sala e mostra o terminal.
 
-Fontes: [Git básico — Pro Git](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository), [GitHub Docs: forks](https://docs.github.com/en/pull-requests/how-tos/work-with-forks/fork-a-repo), [email dos commits](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).
+Fontes: [Git básico — Pro Git](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository), [git log](https://git-scm.com/docs/git-log), [git pull](https://git-scm.com/docs/git-pull), [git merge](https://git-scm.com/docs/git-merge), [GitHub Docs: forks](https://docs.github.com/en/pull-requests/how-tos/work-with-forks/fork-a-repo), [email dos commits](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).

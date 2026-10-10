@@ -6,9 +6,9 @@ Aqui estão a apresentação, os passos a seguir durante a sessão e um pequeno 
 
 ## Começar
 
-1. Abre a [apresentação interativa](https://riquifeup.github.io/workshop_git/). Depois da teoria, avança pelos slides de prática e usa os botões para copiar comandos quando fizer sentido.
-2. Se precisares de mais detalhe, abre o [roteiro do workshop](guia/roteiro.md) e o guia de instalação para [Windows](guia/instalar-windows.md), [macOS](guia/instalar-macos.md) ou [Linux](guia/instalar-linux.md). [WSL](guia/wsl-opcional.md) é opcional.
-4. Na prática, vais criar um **Fork** deste repositório, clonar a tua cópia e preencher o [modelo pessoal](exercicio/README.md).
+1. Abre a [apresentação interativa](https://riquifeup.github.io/workshop_git/). A teoria segue `status → add → commit → push → log → pull → merge → fork`; depois, os slides acompanham toda a prática.
+2. No início da prática, confirma que o [Visual Studio Code](guia/instalar-vscode.md) abre. Se precisares de mais detalhe, abre o [roteiro](guia/roteiro.md) e o guia de Git para [Windows](guia/instalar-windows.md), [macOS](guia/instalar-macos.md) ou [Linux](guia/instalar-linux.md). [WSL](guia/wsl-opcional.md) é opcional.
+3. Na prática, vais criar um **Fork** deste repositório, clonar a tua cópia e preencher o [modelo pessoal](exercicio/README.md).
 
 ## Índice
 
@@ -17,6 +17,7 @@ Aqui estão a apresentação, os passos a seguir durante a sessão e um pequeno 
 | [Apresentação no GitHub Pages](https://riquifeup.github.io/workshop_git/) | Slides para projetar ou rever no navegador |
 | [Fonte dos slides](slides/index.html) | HTML da apresentação neste repositório |
 | [Roteiro](guia/roteiro.md) | Passos e verificações durante a sessão |
+| [Visual Studio Code](guia/instalar-vscode.md) | Verificar ou instalar o editor antes do exercício |
 | [Instalar no Windows](guia/instalar-windows.md) · [macOS](guia/instalar-macos.md) · [Linux](guia/instalar-linux.md) | Preparar o computador |
 | [WSL opcional](guia/wsl-opcional.md) | Para quem usa ou precisa de Linux dentro do Windows |
 | [Erros frequentes](guia/erros-frequentes.md) · [Perguntas](guia/perguntas.md) | Ajuda rápida quando algo não corre como esperado |
@@ -26,7 +27,9 @@ Aqui estão a apresentação, os passos a seguir durante a sessão e um pequeno 
 
 ## O percurso em uma linha
 
-**Fork no GitHub → Clone no computador → editar um ficheiro → `git status` → `git add` → `git commit` → `git push` → `git log` → confirmar no GitHub.**
+**Na prática:** verificar VS Code → Fork no GitHub → Clone no computador → editar um ficheiro → `git status` → `git add` → `git commit` → `git push` → `git log` → confirmar no GitHub.
+
+`git pull` e `git merge` são explicados na teoria com diagramas interativos. O exercício principal usa o percurso acima.
 
 O **Fork** é necessário: cria uma cópia na tua conta, onde podes enviar as tuas alterações. Se clonasses diretamente o repositório do formador, não terias permissão para fazer `push` para ele.
 

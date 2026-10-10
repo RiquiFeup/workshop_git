@@ -117,6 +117,53 @@
     });
   });
 
+  const historyPoints = [...document.querySelectorAll('.history-point')];
+  const historyMessage = document.getElementById('history-message');
+  const historyChange = document.getElementById('history-change');
+  historyPoints.forEach(point => point.addEventListener('click', () => {
+    historyPoints.forEach(item => {
+      const selected = item === point;
+      item.classList.toggle('is-selected', selected);
+      item.setAttribute('aria-pressed', String(selected));
+    });
+    historyMessage.textContent = point.dataset.message;
+    historyChange.textContent = point.dataset.change;
+  }));
+
+  const pullToggle = document.getElementById('pull-toggle');
+  pullToggle?.addEventListener('click', () => {
+    const pulled = pullToggle.getAttribute('aria-pressed') !== 'true';
+    pullToggle.setAttribute('aria-pressed', String(pulled));
+    document.getElementById('pull-visual').classList.toggle('is-pulled', pulled);
+    document.getElementById('pull-local-version').textContent = pulled ? 'Versão A · B · C' : 'Versão A · B';
+    document.getElementById('pull-local-note').textContent = pulled ? 'Já recebeu a alteração C' : 'Ainda falta a alteração C';
+    document.getElementById('pull-result').textContent = pulled
+      ? 'O computador recebeu e integrou a alteração que estava no GitHub.'
+      : 'Clica para ver a atualização chegar ao computador.';
+    pullToggle.textContent = pulled ? 'Repor exemplo' : 'Mostrar o pull';
+  });
+
+  const mergeToggle = document.getElementById('merge-toggle');
+  mergeToggle?.addEventListener('click', () => {
+    const merged = mergeToggle.getAttribute('aria-pressed') !== 'true';
+    mergeToggle.setAttribute('aria-pressed', String(merged));
+    document.getElementById('merge-visual').classList.toggle('is-merged', merged);
+    document.getElementById('merge-outcome-text').textContent = merged
+      ? 'A main inclui a nova análise' : 'Duas linhas de trabalho';
+    document.getElementById('merge-result').textContent = merged
+      ? 'O trabalho de “experimento” foi integrado na main.'
+      : 'Clica para juntar o trabalho de “experimento” à main.';
+    mergeToggle.textContent = merged ? 'Repor exemplo' : 'Juntar na main';
+  });
+
+  const vscodeChoices = [...document.querySelectorAll('[data-vscode-choice]')];
+  vscodeChoices.forEach(button => button.addEventListener('click', () => {
+    const choice = button.dataset.vscodeChoice;
+    vscodeChoices.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    document.getElementById('vscode-ready').hidden = choice !== 'ready';
+    document.getElementById('vscode-install').hidden = choice !== 'install';
+  }));
+
   document.addEventListener('keydown', event => {
     if (overview.open) return;
     if (event.altKey || event.ctrlKey || event.metaKey) return;

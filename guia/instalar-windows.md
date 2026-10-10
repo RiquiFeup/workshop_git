@@ -2,6 +2,8 @@
 
 **Objetivo:** abrir o Git Bash, confirmar que Git funciona e ficar pronto para fazer `push` para o teu *fork*. Conta com cerca de 10 minutos se já tiveres conta no GitHub.
 
+Antes de começares o exercício, confirma também que o [Visual Studio Code](instalar-vscode.md) abre; vais usá-lo para editar o README.
+
 ## 1. Instalar e abrir
 
 1. Descarrega **Git for Windows** em [git-scm.com/install/windows](https://git-scm.com/install/windows). Escolhe a versão adequada ao teu computador; na maioria dos casos é **x64**.

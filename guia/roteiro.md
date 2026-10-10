@@ -2,14 +2,15 @@
 
 [Voltar ao início](../README.md) · [Ajuda para erros](erros-frequentes.md) · [Perguntas](perguntas.md)
 
-**Objetivo:** fazer uma pequena alteração num ficheiro de texto e vê-la no teu próprio repositório GitHub. Os [slides interativos](https://riquifeup.github.io/workshop_git/) acompanham cada passo da prática; este roteiro serve para consulta e recuperação de erros. Podes usar um pseudónimo; não publiques dados que queiras manter privados.
+**Objetivo:** fazer uma pequena alteração num ficheiro de texto e vê-la no teu próprio repositório GitHub. Os [slides interativos](https://riquifeup.github.io/workshop_git/) apresentam `status → add → commit → push → log → pull → merge → fork` na teoria e acompanham cada passo da prática. Este roteiro serve para consulta e recuperação de erros. Podes usar um pseudónimo; não publiques dados que queiras manter privados.
 
 ## Mapa da sessão
 
 | Hora | Etapa | Ponto de verificação |
 | --- | --- | --- |
 | 14:00–14:30 | Explicação visual e demonstração | Sabes distinguir Git (história local) de GitHub (cópia online) |
-| 14:30–15:00 | Conta, instalação e configuração | Estás na tua conta; `git --version` funciona |
+| 14:30–14:35 | Verificar Visual Studio Code | O editor abre no computador |
+| 14:35–15:00 | Conta, instalação e configuração de Git | Estás na tua conta; `git --version` funciona |
 | 15:00–15:10 | Fork e Clone | Tens a tua cópia no GitHub e no computador |
 | 15:10–15:18 | Personalizar o ficheiro | `git status` mostra `exercicio/README.md` alterado |
 | 15:18–15:27 | Add, Commit e Push | O novo commit aparece no teu Fork |
@@ -17,9 +18,9 @@
 
 O apoio a dúvidas e erros decorre durante toda a parte prática. Se terminares cedo, explora os [repositórios reais](recursos.md) ou ajuda um colega sem lhe pedir credenciais.
 
-## 1. Preparar conta e Git · 14:30–15:00
+## 1. Verificar VS Code, conta e Git · 14:30–15:00
 
-Nos [slides 16 e 17](https://riquifeup.github.io/workshop_git/slides/#slide-16), escolhe o sistema operativo e copia os comandos de instalação e verificação, se precisares.
+Começa no [slide 16](https://riquifeup.github.io/workshop_git/slides/#slide-16): abre o **Visual Studio Code**. Se não estiver instalado, usa o [guia curto](instalar-vscode.md) e o download oficial. Depois, nos [slides 17 e 18](https://riquifeup.github.io/workshop_git/slides/#slide-17), escolhe o sistema operativo e copia os comandos de instalação e verificação de Git, se precisares.
 
 1. Se ainda não tens conta, abre [github.com/signup](https://github.com/signup), cria-a e confirma o email recebido. Se já tens conta, inicia sessão.
 2. Instala ou verifica o Git com o guia do teu sistema: [Windows](instalar-windows.md), [macOS](instalar-macos.md) ou [Linux](instalar-linux.md). No Windows, usa **Git Bash** para seguir os comandos abaixo. [WSL](wsl-opcional.md) só é necessário se já o usas ou tens uma razão específica para o instalar.
@@ -40,11 +41,11 @@ Nos [slides 16 e 17](https://riquifeup.github.io/workshop_git/slides/#slide-16),
 
    Se preferires não publicar o teu endereço pessoal nos commits, configura primeiro um [endereço `noreply` do GitHub](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address) e usa-o no segundo comando.
 
-**Conseguiste?** `git --version` responde; a tua conta abre no navegador. Se não, chama o apoio e mostra a mensagem de erro.
+**Conseguiste?** O VS Code abre, `git --version` responde e a tua conta GitHub abre no navegador. Se não, chama o apoio e mostra a mensagem de erro.
 
 ## 2. Criar a tua cópia online · 15:00–15:05
 
-Segue o [slide 18](https://riquifeup.github.io/workshop_git/slides/#slide-18).
+Segue o [slide 19](https://riquifeup.github.io/workshop_git/slides/#slide-19). O Fork apareceu depois de `merge` na teoria, mas é o **primeiro passo com o repositório** na prática.
 
 1. Estás no repositório original deste workshop. No canto superior direito da página, escolhe **Fork** e depois **Create fork**.
 2. Seleciona a tua conta como destino. Aguarda até abrir a página do teu Fork.
@@ -54,7 +55,7 @@ Segue o [slide 18](https://riquifeup.github.io/workshop_git/slides/#slide-18).
 
 ## 3. Clonar a tua cópia para o computador · 15:05–15:10
 
-Segue o [slide 19](https://riquifeup.github.io/workshop_git/slides/#slide-19).
+Segue o [slide 20](https://riquifeup.github.io/workshop_git/slides/#slide-20).
 
 1. Na página **do teu Fork**, carrega em **Code → HTTPS** e copia o endereço mostrado. Não copies o endereço do repositório original.
 2. No terminal, vai para uma pasta onde costumas guardar trabalhos. Podes, por exemplo, abrir o terminal já nessa pasta. Escreve `git clone`, um espaço, cola o endereço copiado e prime Enter. O comando terá esta forma (o teu endereço será diferente):
@@ -81,9 +82,9 @@ Segue o [slide 19](https://riquifeup.github.io/workshop_git/slides/#slide-19).
 
 ## 4. Alterar um ficheiro · 15:10–15:18
 
-Segue o [slide 20](https://riquifeup.github.io/workshop_git/slides/#slide-20).
+Segue o [slide 21](https://riquifeup.github.io/workshop_git/slides/#slide-21).
 
-1. Abre a pasta clonada no editor de texto que costumas usar. Abre `exercicio/README.md`.
+1. No **VS Code**, escolhe **File → Open Folder** e abre a pasta clonada `workshop_git`. Depois abre `exercicio/README.md`.
 2. Substitui os campos entre parênteses retos por respostas tuas. Basta alterar o título e duas linhas de «Sobre mim». Os badges e ícones do modelo são exemplos opcionais; podes apagá-los. Podes usar um pseudónimo.
 3. Guarda o ficheiro. No terminal, dentro da pasta clonada, escreve:
 
@@ -95,7 +96,7 @@ Segue o [slide 20](https://riquifeup.github.io/workshop_git/slides/#slide-20).
 
 ## 5. Guardar a versão e enviá-la · 15:18–15:27
 
-Segue os [slides 21 e 22](https://riquifeup.github.io/workshop_git/slides/#slide-21).
+Segue os [slides 22 e 23](https://riquifeup.github.io/workshop_git/slides/#slide-22).
 
 Executa um comando de cada vez:
 
@@ -115,7 +116,7 @@ Este repositório usa a branch `main`. Se o terminal indicar outra branch, chama
 
 ## 6. Ver o resultado · 15:27–15:30
 
-Segue o [slide 23](https://riquifeup.github.io/workshop_git/slides/#slide-23).
+Segue o [slide 24](https://riquifeup.github.io/workshop_git/slides/#slide-24).
 
 No terminal, consulta as últimas versões guardadas:
 
@@ -130,3 +131,5 @@ Se um passo falhou, mostra ao apoio **o comando e a mensagem de erro**; evita mo
 ## Depois do workshop
 
 Guarda o link do teu Fork. Podes voltar a editar o mesmo ficheiro e repetir `git status` → `git add` → `git commit` → `git push`, consultando `git log --oneline -5` quando quiseres ver os últimos passos guardados. Este ciclo é a base para guardar versões dos trabalhos que vais fazer no curso.
+
+Se quiseres rever as ideias de colaboração apresentadas na teoria, volta aos [slides de `pull` e `merge`](https://riquifeup.github.io/workshop_git/slides/#slide-12). `pull` recebe e integra alterações do repositório remoto; `merge` integra outra branch na branch atual. Consulta os [recursos](recursos.md) antes de os aplicares a trabalhos com alterações de várias pessoas.

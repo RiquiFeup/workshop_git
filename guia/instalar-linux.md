@@ -2,6 +2,8 @@
 
 **Objetivo:** confirmar Git no terminal, identificar os teus commits e conseguir autenticar um `push` por HTTPS.
 
+Antes de começares o exercício, confirma também que o [Visual Studio Code](instalar-vscode.md) abre; vais usá-lo para editar o README.
+
 ## 1. Confirmar ou instalar Git
 
 Abre o **Terminal** e executa:

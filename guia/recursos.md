@@ -10,10 +10,14 @@ Os links abaixo permitem rever os passos e observar repositórios usados em Bioi
 | --- | --- |
 | Perceber a origem do Git | [Uma história curta do Git · Pro Git](https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git) |
 | Rever a instalação | [Downloads oficiais do Git](https://git-scm.com/downloads/) |
+| Verificar ou instalar o editor | [Download oficial do Visual Studio Code](https://code.visualstudio.com/download) · [Guia do workshop](instalar-vscode.md) |
 | Criar e confirmar uma conta | [Criar conta · GitHub Docs](https://docs.github.com/en/account-and-profile/how-tos/account-management/creating-an-account-on-github) |
 | Criar a tua cópia online | [Fazer Fork · GitHub Docs](https://docs.github.com/en/pull-requests/how-tos/work-with-forks/fork-a-repo) |
 | Trazer a cópia para o computador | [Clonar um repositório · GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) |
 | Rever as alterações, guardar e enviar | [Começar com Git · GitHub Docs](https://docs.github.com/en/get-started/using-git/about-git) |
+| Ver os commits anteriores | [Referência de `git log`](https://git-scm.com/docs/git-log) |
+| Receber alterações do remoto | [Referência de `git pull`](https://git-scm.com/docs/git-pull) |
+| Juntar branches | [Referência de `git merge`](https://git-scm.com/docs/git-merge) |
 | Usar um email privado nos commits | [Email de commit · GitHub Docs](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address) |
 
 ## Repositórios para explorar
@@ -34,6 +38,10 @@ As contagens de estrelas, commits e Issues mudam com o tempo. Na apresentação,
 4. **Issues:** que perguntas ou problemas estão a ser discutidos?
 
 Se mais tarde quiseres contribuir para um projeto aberto, procura as instruções `CONTRIBUTING.md` do próprio projeto antes de começar.
+
+## Para rever a ordem da teoria
+
+Os [slides 7 a 14](https://riquifeup.github.io/workshop_git/slides/#slide-7) seguem `status → add → commit → push → log → pull → merge → fork`. Os diagramas de `log`, `pull` e `merge` respondem a cliques. Na prática, começa por verificar o VS Code, faz Fork e Clone da tua cópia e só depois edita o README.
 
 ## Depois do workshop: ideias para o teu README
 
