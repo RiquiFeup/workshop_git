@@ -24,6 +24,8 @@ Aqui estão a apresentação, os passos a seguir durante a sessão e um pequeno 
 | [Recursos e exemplos reais](guia/recursos.md) | Documentação e repositórios de Bioinformática |
 | [Modelo do exercício](exercicio/README.md) | O ficheiro que vais personalizar no teu Fork |
 
+A apresentação publicada está organizada em [`docs/`](docs/): a página de entrada está em `docs/index.html`, os slides em `docs/slides/` e os logótipos em `docs/assets/brand/`.
+
 ## O percurso em uma linha
 
 **Na prática:** verificar VS Code → Fork no GitHub → Clone no computador → editar um ficheiro → `git status` → `git add` → `git commit` → `git push` → `git log` → confirmar no GitHub.
