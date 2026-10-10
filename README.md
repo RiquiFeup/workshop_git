@@ -15,7 +15,7 @@ Aqui estão a apresentação, os passos a seguir durante a sessão e um pequeno 
 | Material | Para quê |
 | --- | --- |
 | [Apresentação no GitHub Pages](https://riquifeup.github.io/workshop_git/) | Slides para projetar ou rever no navegador |
-| [Fonte dos slides](slides/index.html) | HTML da apresentação neste repositório |
+| [Fonte dos slides](docs/slides/index.html) | HTML da apresentação neste repositório |
 | [Roteiro](guia/roteiro.md) | Passos e verificações durante a sessão |
 | [Visual Studio Code](guia/instalar-vscode.md) | Verificar ou instalar o editor antes do exercício |
 | [Instalar no Windows](guia/instalar-windows.md) · [macOS](guia/instalar-macos.md) · [Linux](guia/instalar-linux.md) | Preparar o computador |
