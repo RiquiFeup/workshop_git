@@ -143,16 +143,27 @@
     pullToggle.textContent = pulled ? 'Repor exemplo' : 'Mostrar o pull';
   });
 
+  const branchToggle = document.getElementById('branch-toggle');
+  branchToggle?.addEventListener('click', () => {
+    const branched = branchToggle.getAttribute('aria-pressed') !== 'true';
+    branchToggle.setAttribute('aria-pressed', String(branched));
+    document.getElementById('branch-visual').classList.toggle('is-branched', branched);
+    document.getElementById('branch-result').textContent = branched
+      ? 'A feature nasceu da main. As duas linhas podem receber commits diferentes.'
+      : 'Clica para abrir uma linha de trabalho paralela.';
+    branchToggle.textContent = branched ? 'Repor exemplo' : 'Criar a branch feature';
+  });
+
   const mergeToggle = document.getElementById('merge-toggle');
   mergeToggle?.addEventListener('click', () => {
     const merged = mergeToggle.getAttribute('aria-pressed') !== 'true';
     mergeToggle.setAttribute('aria-pressed', String(merged));
     document.getElementById('merge-visual').classList.toggle('is-merged', merged);
     document.getElementById('merge-outcome-text').textContent = merged
-      ? 'A main inclui a nova análise' : 'Duas linhas de trabalho';
+      ? 'A main inclui o trabalho da feature' : 'Duas linhas de commits';
     document.getElementById('merge-result').textContent = merged
-      ? 'O trabalho de “experimento” foi integrado na main.'
-      : 'Clica para juntar o trabalho de “experimento” à main.';
+      ? 'A feature convergiu para um novo commit na main.'
+      : 'Clica para ver a feature convergir para a main.';
     mergeToggle.textContent = merged ? 'Repor exemplo' : 'Juntar na main';
   });
 

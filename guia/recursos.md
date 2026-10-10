@@ -17,6 +17,7 @@ Os links abaixo permitem rever os passos e observar repositórios usados em Bioi
 | Rever as alterações, guardar e enviar | [Começar com Git · GitHub Docs](https://docs.github.com/en/get-started/using-git/about-git) |
 | Ver os commits anteriores | [Referência de `git log`](https://git-scm.com/docs/git-log) |
 | Receber alterações do remoto | [Referência de `git pull`](https://git-scm.com/docs/git-pull) |
+| Criar outra linha de trabalho | [Branches em poucas palavras · Pro Git](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) |
 | Juntar branches | [Referência de `git merge`](https://git-scm.com/docs/git-merge) |
 | Usar um email privado nos commits | [Email de commit · GitHub Docs](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address) |
 
@@ -41,7 +42,7 @@ Se mais tarde quiseres contribuir para um projeto aberto, procura as instruçõe
 
 ## Para rever a ordem da teoria
 
-Os [slides 7 a 14](https://riquifeup.github.io/workshop_git/slides/#slide-7) seguem `status → add → commit → push → log → pull → merge → fork`. Os diagramas de `log`, `pull` e `merge` respondem a cliques. Na prática, começa por verificar o VS Code, faz Fork e Clone da tua cópia e só depois edita o README.
+Os [slides 6 a 14](https://riquifeup.github.io/workshop_git/slides/#slide-6) seguem `status → add → commit → push → log → pull → branch → merge → fork`. Os diagramas de `log`, `pull`, branch e `merge` respondem a cliques. Na prática, começa pelo [slide 16: verificar o VS Code](https://riquifeup.github.io/workshop_git/slides/#slide-16), faz Fork e Clone da tua cópia e só depois edita o README.
 
 ## Depois do workshop: ideias para o teu README
 

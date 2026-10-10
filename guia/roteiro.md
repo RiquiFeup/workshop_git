@@ -2,7 +2,7 @@
 
 [Voltar ao início](../README.md) · [Ajuda para erros](erros-frequentes.md) · [Perguntas](perguntas.md)
 
-**Objetivo:** fazer uma pequena alteração num ficheiro de texto e vê-la no teu próprio repositório GitHub. Os [slides interativos](https://riquifeup.github.io/workshop_git/) apresentam `status → add → commit → push → log → pull → merge → fork` na teoria e acompanham cada passo da prática. Este roteiro serve para consulta e recuperação de erros. Podes usar um pseudónimo; não publiques dados que queiras manter privados.
+**Objetivo:** fazer uma pequena alteração num ficheiro de texto e vê-la no teu próprio repositório GitHub. Os [slides interativos](https://riquifeup.github.io/workshop_git/) apresentam `status → add → commit → push → log → pull → branch → merge → fork` na teoria e acompanham cada passo da prática. Este roteiro serve para consulta e recuperação de erros. Podes usar um pseudónimo; não publiques dados que queiras manter privados.
 
 ## Mapa da sessão
 
@@ -132,4 +132,4 @@ Se um passo falhou, mostra ao apoio **o comando e a mensagem de erro**; evita mo
 
 Guarda o link do teu Fork. Podes voltar a editar o mesmo ficheiro e repetir `git status` → `git add` → `git commit` → `git push`, consultando `git log --oneline -5` quando quiseres ver os últimos passos guardados. Este ciclo é a base para guardar versões dos trabalhos que vais fazer no curso.
 
-Se quiseres rever as ideias de colaboração apresentadas na teoria, volta aos [slides de `pull` e `merge`](https://riquifeup.github.io/workshop_git/slides/#slide-12). `pull` recebe e integra alterações do repositório remoto; `merge` integra outra branch na branch atual. Consulta os [recursos](recursos.md) antes de os aplicares a trabalhos com alterações de várias pessoas.
+Se quiseres rever as ideias de colaboração apresentadas na teoria, volta aos [slides de `pull`, branch e `merge`](https://riquifeup.github.io/workshop_git/slides/#slide-11). `pull` recebe e integra alterações do repositório remoto; uma branch abre outra linha de trabalho; `merge` junta essa linha à branch atual. Consulta os [recursos](recursos.md) antes de os aplicares a trabalhos com alterações de várias pessoas.

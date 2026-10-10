@@ -34,19 +34,23 @@ Mostra os commits guardados no repositório. Usa `git log --oneline -5` para ver
 
 ## Qual é a diferença entre `git push` e `git pull`?
 
-`push` envia commits locais para o repositório remoto. `pull` traz alterações do remoto e tenta integrá-las na branch local em que estás. No [slide 12](https://riquifeup.github.io/workshop_git/slides/#slide-12), podes clicar para ver o sentido da atualização. Na prática, o teu primeiro envio usa `push`.
+`push` envia commits locais para o repositório remoto. `pull` traz alterações do remoto e tenta integrá-las na branch local em que estás. No [slide 11](https://riquifeup.github.io/workshop_git/slides/#slide-11), podes clicar para ver o sentido da atualização. Na prática, o teu primeiro envio usa `push`.
+
+## O que é uma branch?
+
+É uma linha de trabalho dentro do mesmo repositório. No [slide 12](https://riquifeup.github.io/workshop_git/slides/#slide-12), podes criar visualmente a linha `feature` a partir de `main` e ver as duas linhas de commits em paralelo.
 
 ## O que faz `git merge`?
 
-Integra alterações de uma branch noutra. Uma **branch** é um caminho de trabalho dentro do mesmo repositório. No [slide 13](https://riquifeup.github.io/workshop_git/slides/#slide-13), a branch `experimento` é integrada em `main`. Se as duas mudaram a mesma parte de um ficheiro, pode ser necessário resolver um conflito.
+Integra alterações de uma branch noutra. No [slide 13](https://riquifeup.github.io/workshop_git/slides/#slide-13), as linhas de commits de `feature` e `main` convergem. Se as duas mudaram a mesma parte de um ficheiro, pode ser necessário resolver um conflito.
 
 ## A ordem da teoria é a ordem dos comandos da prática?
 
-A teoria segue `status → add → commit → push → log → pull → merge → fork` para explicar os conceitos. Na prática, fazes **Fork antes de Clone**, editas o README e usas `status`, `add`, `commit`, `push` e `log`. `pull` e `merge` ficam como conceitos para quando trabalhares com alterações de outras pessoas.
+A teoria segue `status → add → commit → push → log → pull → branch → merge → fork` para explicar os conceitos. Na prática, fazes **Fork antes de Clone**, editas o README e usas `status`, `add`, `commit`, `push` e `log`. `pull`, branches e `merge` ficam como conceitos para quando trabalhares com alterações de outras pessoas.
 
 ## Preciso de criar uma branch no exercício?
 
-Não neste exercício. **Branch** é uma linha de trabalho alternativa, útil quando se desenvolve uma mudança sem mexer logo na linha principal. Vamos trabalhar na branch principal, que neste repositório se chama `main`.
+Não neste exercício. O [slide 12](https://riquifeup.github.io/workshop_git/slides/#slide-12) mostra para que serve uma branch; na prática, vamos trabalhar na linha principal deste repositório, chamada `main`.
 
 ## O meu README tem de mostrar dados pessoais?
 
@@ -72,4 +76,4 @@ Abre **o teu *fork*** no GitHub, entra em `exercicio/README.md` e confirma que a
 
 Procura a primeira linha da mensagem em [Erros frequentes](erros-frequentes.md). Durante a sessão, chama o apoio da sala e mostra o terminal.
 
-Fontes: [Git básico — Pro Git](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository), [git log](https://git-scm.com/docs/git-log), [git pull](https://git-scm.com/docs/git-pull), [git merge](https://git-scm.com/docs/git-merge), [GitHub Docs: forks](https://docs.github.com/en/pull-requests/how-tos/work-with-forks/fork-a-repo), [email dos commits](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).
+Fontes: [Git básico — Pro Git](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository), [git log](https://git-scm.com/docs/git-log), [git pull](https://git-scm.com/docs/git-pull), [branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell), [git merge](https://git-scm.com/docs/git-merge), [GitHub Docs: forks](https://docs.github.com/en/pull-requests/how-tos/work-with-forks/fork-a-repo), [email dos commits](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).

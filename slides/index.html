@@ -9,8 +9,8 @@
   <title>Git & GitHub — ArmisLAB × NUBI</title>
   <link rel="stylesheet" href="styles/slides.css?v=2">
   <link rel="stylesheet" href="styles/practice.css?v=4">
-  <link rel="stylesheet" href="styles/concepts.css?v=1">
-  <script src="scripts/slides.js?v=3" defer></script>
+  <link rel="stylesheet" href="styles/concepts.css?v=2">
+  <script src="scripts/slides.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#slide-1">Ir para a apresentação</a>
@@ -55,6 +55,7 @@
         <div>
           <h2>O Git nasceu de um problema de colaboração.</h2>
           <p class="lead">Em 2005, o desenvolvimento do Linux precisava de uma forma rápida e fiável de acompanhar muitas alterações feitas por muitas pessoas.</p>
+          <p class="aside">O Git organiza essas alterações numa história. Cada <strong>commit</strong> guarda um passo com uma mensagem que explica o que mudou.</p>
         </div>
         <div class="history-visual" role="img" aria-label="Muitos contributos convergem para uma história partilhada">
           <div class="history-people"><span>pessoa A</span><span>pessoa B</span><span>pessoa C</span></div>
@@ -65,21 +66,7 @@
       </div>
     </section>
 
-    <section class="slide" id="slide-4" data-title="Ideia principal" aria-roledescription="slide" aria-label="Slide 4: Git guarda a história do projeto">
-      <div class="slide-inner">
-        <h2>Git é a história do projeto.</h2>
-        <p class="lead narrow">Cada <strong>commit</strong> é um ponto guardado nessa história: alterações escolhidas, com uma mensagem que explica o passo.</p>
-        <div class="timeline" role="img" aria-label="Três commits em sequência: criar README, corrigir descrição, acrescentar recursos">
-          <div class="timeline-line"></div>
-          <div class="timeline-item"><span class="timeline-dot"></span><strong>Criar README</strong><small>primeiro passo</small></div>
-          <div class="timeline-item"><span class="timeline-dot"></span><strong>Corrigir descrição</strong><small>segundo passo</small></div>
-          <div class="timeline-item"><span class="timeline-dot"></span><strong>Juntar recursos</strong><small>terceiro passo</small></div>
-        </div>
-        <p class="bottom-statement">Assim podemos perceber como chegámos à versão atual.</p>
-      </div>
-    </section>
-
-    <section class="slide" id="slide-5" data-title="Git e GitHub" aria-roledescription="slide" aria-label="Slide 5: diferença entre Git e GitHub">
+    <section class="slide" id="slide-4" data-title="Git e GitHub" aria-roledescription="slide" aria-label="Slide 4: diferença entre Git e GitHub">
       <div class="slide-inner">
         <h2>Git no computador. GitHub na web.</h2>
         <div class="worlds">
@@ -91,7 +78,7 @@
       </div>
     </section>
 
-    <section class="slide" id="slide-6" data-title="Repositório" aria-roledescription="slide" aria-label="Slide 6: repositório">
+    <section class="slide" id="slide-5" data-title="Repositório" aria-roledescription="slide" aria-label="Slide 5: repositório">
       <div class="slide-inner repo-layout">
         <div><h2>Um repositório é a pasta do projeto com história.</h2><p class="lead">Lá dentro vivem os ficheiros e o registo das alterações guardadas com Git.</p><p class="aside">No workshop, vais copiar um repositório e editar o teu <strong>README</strong>: a página de entrada que explica o projeto.</p></div>
         <div class="repo-window" aria-label="Exemplo de estrutura de um repositório">
@@ -101,35 +88,35 @@
       </div>
     </section>
 
-    <section class="slide command-slide" id="slide-7" data-title="status" aria-roledescription="slide" aria-label="Slide 7: git status">
+    <section class="slide command-slide" id="slide-6" data-title="status" aria-roledescription="slide" aria-label="Slide 6: git status">
       <div class="slide-inner command-layout">
         <div><h2><code>git status</code></h2><p class="lead">Pergunta ao Git: <strong>“O que está diferente agora?”</strong></p><p class="aside">É o comando para te orientares. Podes usá-lo antes e depois de cada passo.</p></div>
         <div class="terminal" aria-label="Exemplo de git status antes de guardar alterações"><div class="terminal-bar"><span></span><span></span><span></span><b>Terminal</b></div><div class="terminal-body"><p><em>$</em> git status</p><p class="term-muted">Changes not staged for commit:</p><p class="term-red">modified: exercicio/README.md</p><p class="term-explain">O README foi alterado, mas ainda não foi escolhido para o próximo commit.</p></div></div>
       </div>
     </section>
 
-    <section class="slide command-slide" id="slide-8" data-title="add" aria-roledescription="slide" aria-label="Slide 8: git add">
+    <section class="slide command-slide" id="slide-7" data-title="add" aria-roledescription="slide" aria-label="Slide 7: git add">
       <div class="slide-inner command-layout">
         <div><h2><code>git add</code></h2><p class="lead">Escolhe que alterações entram no <strong>próximo commit</strong>.</p><p class="aside">Hoje vamos escolher apenas o README que cada pessoa editou.</p></div>
         <div class="staging-diagram" role="img" aria-label="README alterado passa para a área de preparação depois do comando git add exercicio/README.md"><div class="staging-before"><span class="stage-label">Alterado</span><strong>README.md</strong></div><div class="staging-arrow"><code>git add<br>exercicio/README.md</code><span aria-hidden="true">→</span></div><div class="staging-after"><span class="stage-label">Escolhido para guardar</span><strong>README.md</strong></div></div>
       </div>
     </section>
 
-    <section class="slide command-slide" id="slide-9" data-title="commit" aria-roledescription="slide" aria-label="Slide 9: git commit">
+    <section class="slide command-slide" id="slide-8" data-title="commit" aria-roledescription="slide" aria-label="Slide 8: git commit">
       <div class="slide-inner command-layout">
         <div><h2><code>git commit</code></h2><p class="lead">Guarda as alterações escolhidas como <strong>um passo na história</strong>.</p><p class="aside">A mensagem ajuda outras pessoas — e o teu “eu” do futuro — a perceber o que fizeste.</p></div>
         <div class="commit-visual"><div class="commit-command"><span>$</span> git commit -m "Personaliza o meu README"</div><div class="commit-line"><span class="commit-dot"></span><span class="commit-dot current"></span></div><div class="commit-card"><strong>Personaliza o meu README</strong><small>novo ponto na história do projeto</small></div></div>
       </div>
     </section>
 
-    <section class="slide command-slide" id="slide-10" data-title="push" aria-roledescription="slide" aria-label="Slide 10: git push">
+    <section class="slide command-slide" id="slide-9" data-title="push" aria-roledescription="slide" aria-label="Slide 9: git push">
       <div class="slide-inner command-layout">
         <div><h2><code>git push</code></h2><p class="lead">Envia os teus commits locais para <strong>a tua cópia no GitHub</strong>.</p><p class="aside">Depois, abre o repositório no navegador e confirma que o novo commit aparece no histórico.</p></div>
         <div class="push-visual" role="img" aria-label="Commit no computador enviado para a cópia pessoal no GitHub"><div class="push-place"><span>computador</span><div class="push-track"><i></i><i></i><i class="latest"></i></div><strong>commit novo</strong></div><div class="push-arrow"><code>git push</code><span aria-hidden="true">→</span></div><div class="push-place destination"><span>GitHub</span><div class="push-track"><i></i><i></i><i class="latest"></i></div><strong>a tua cópia</strong></div></div>
       </div>
     </section>
 
-    <section class="slide concept-slide" id="slide-11" data-title="log" aria-roledescription="slide" aria-label="Slide 11: git log">
+    <section class="slide concept-slide" id="slide-10" data-title="log" aria-roledescription="slide" aria-label="Slide 10: git log">
       <div class="slide-inner concept-layout">
         <div class="concept-copy"><h2><code>git log</code></h2><p class="lead">Mostra os <strong>commits guardados</strong>, do mais recente para o mais antigo.</p><p class="aside">Clica num ponto da história. Cada mensagem recorda o que foi feito.</p><a class="concept-doc" href="https://git-scm.com/docs/git-log" target="_blank" rel="noopener noreferrer">Documentação de git log ↗</a></div>
         <div class="concept-visual history-explorer" aria-label="Histórico interativo de três commits">
@@ -144,7 +131,7 @@
       </div>
     </section>
 
-    <section class="slide concept-slide" id="slide-12" data-title="pull" aria-roledescription="slide" aria-label="Slide 12: git pull">
+    <section class="slide concept-slide" id="slide-11" data-title="pull" aria-roledescription="slide" aria-label="Slide 11: git pull">
       <div class="slide-inner concept-layout">
         <div class="concept-copy"><h2><code>git pull</code></h2><p class="lead">Traz alterações do repositório online e <strong>integra-as na tua branch local</strong>.</p><p class="aside">Se outra pessoa publicou uma versão nova, o teu computador pode recebê-la.</p><a class="concept-doc" href="https://git-scm.com/docs/git-pull" target="_blank" rel="noopener noreferrer">Documentação de git pull ↗</a></div>
         <div class="concept-visual pull-demo" id="pull-visual">
@@ -157,17 +144,39 @@
       </div>
     </section>
 
+    <section class="slide concept-slide" id="slide-12" data-title="branch" aria-roledescription="slide" aria-label="Slide 12: branch">
+      <div class="slide-inner concept-layout">
+        <div class="concept-copy"><h2>Branch</h2><p class="lead">Uma <strong>branch</strong> é outra linha de trabalho no mesmo repositório.</p><p class="aside">Podes experimentar uma mudança na <code>feature</code> enquanto a <code>main</code> continua no seu caminho. No exercício, vamos ficar na <code>main</code>.</p><a class="concept-doc" href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank" rel="noopener noreferrer">Entender branches ↗</a></div>
+        <div class="concept-visual graph-demo branch-demo" id="branch-visual">
+          <svg class="git-graph" viewBox="0 0 700 310" role="img" aria-label="Linha main com commits; ao clicar, aparece uma segunda linha horizontal chamada feature, que nasce da main">
+            <text class="graph-label graph-label-main" x="24" y="75">main</text>
+            <path class="graph-line graph-main" d="M55 112 H655"/>
+            <g class="graph-main-commits"><circle cx="80" cy="112" r="12"/><circle cx="210" cy="112" r="12"/><circle cx="395" cy="112" r="12"/><circle cx="620" cy="112" r="12"/></g>
+            <g class="graph-feature-content"><text class="graph-label graph-label-feature" x="24" y="215">feature</text><path class="graph-line graph-feature" d="M210 112 C238 112 230 250 265 250 H555"/><g class="graph-feature-commits"><circle cx="300" cy="250" r="12"/><circle cx="425" cy="250" r="12"/><circle cx="535" cy="250" r="12"/></g></g>
+          </svg>
+          <div class="graph-key"><span><i class="key-main"></i> linha principal</span><span><i class="key-feature"></i> experiência em paralelo</span></div>
+          <button type="button" class="concept-action" id="branch-toggle" aria-pressed="false">Criar a branch feature</button>
+          <p class="concept-result" id="branch-result" aria-live="polite">Clica para abrir uma linha de trabalho paralela.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="slide concept-slide" id="slide-13" data-title="merge" aria-roledescription="slide" aria-label="Slide 13: git merge">
       <div class="slide-inner concept-layout">
-        <div class="concept-copy"><h2><code>git merge</code></h2><p class="lead">Junta o trabalho de <strong>outra branch</strong> à branch em que estás.</p><p class="aside">Uma branch é um caminho de trabalho. Neste exemplo, estás em <code>main</code> e queres integrar <code>experimento</code>.</p><a class="concept-doc" href="https://git-scm.com/docs/git-merge" target="_blank" rel="noopener noreferrer">Documentação de git merge ↗</a></div>
-        <div class="concept-visual merge-demo" id="merge-visual">
-          <div class="merge-track"><span>main</span><i></i><i></i><i class="merge-destination"></i><strong>relatório principal</strong></div>
-          <div class="merge-track branch"><span>experimento</span><i></i><i></i><i class="merge-destination"></i><strong>nova análise</strong></div>
-          <div class="merge-join" aria-hidden="true">↘</div>
-          <div class="merge-outcome"><span>Resultado</span><strong id="merge-outcome-text">Duas linhas de trabalho</strong></div>
-          <code class="concept-code">git merge experimento</code>
+        <div class="concept-copy"><h2><code>git merge</code></h2><p class="lead">Junta o trabalho da <strong>feature</strong> à <strong>main</strong>.</p><p class="aside">Estás na <code>main</code>. Depois do merge, a linha principal também inclui o trabalho feito na <code>feature</code>.</p><a class="concept-doc" href="https://git-scm.com/docs/git-merge" target="_blank" rel="noopener noreferrer">Documentação de git merge ↗</a></div>
+        <div class="concept-visual graph-demo merge-demo" id="merge-visual">
+          <svg class="git-graph" viewBox="0 0 700 310" role="img" aria-label="Duas linhas horizontais de commits: main em cima e feature em baixo. Ao clicar, a feature converge para um novo commit na main">
+            <text class="graph-label graph-label-main" x="24" y="75">main</text><text class="graph-label graph-label-feature" x="24" y="215">feature</text>
+            <path class="graph-line graph-main" d="M55 112 H655"/><path class="graph-line graph-feature" d="M210 112 C238 112 230 250 265 250 H535"/><path class="graph-line graph-merge-path" pathLength="1" d="M535 250 H555 C600 250 565 112 620 112"/>
+            <g class="graph-main-commits"><circle cx="80" cy="112" r="12"/><circle cx="210" cy="112" r="12"/><circle cx="395" cy="112" r="12"/></g>
+            <g class="graph-feature-commits"><circle cx="300" cy="250" r="12"/><circle cx="425" cy="250" r="12"/><circle cx="535" cy="250" r="12"/></g>
+            <circle class="graph-merge-commit" cx="620" cy="112" r="15"/>
+          </svg>
+          <div class="graph-key"><span><i class="key-main"></i> main</span><span><i class="key-feature"></i> feature</span></div>
+          <div class="merge-outcome"><span>Resultado</span><strong id="merge-outcome-text">Duas linhas de commits</strong></div>
+          <code class="concept-code">git merge feature</code>
           <button type="button" class="concept-action" id="merge-toggle" aria-pressed="false">Juntar na main</button>
-          <p class="concept-result" id="merge-result" aria-live="polite">Clica para juntar o trabalho de “experimento” à main.</p>
+          <p class="concept-result" id="merge-result" aria-live="polite">Clica para ver a feature convergir para a main.</p>
         </div>
       </div>
     </section>
